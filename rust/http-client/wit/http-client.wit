@@ -1,8 +1,7 @@
-package request:http;
+package request:http-client;
 
 interface api {
   get: func(url: string) -> result<string, string>;
-  post: func(url: string) -> result<string, string>;
 }
 
 world http {
