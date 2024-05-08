@@ -30,6 +30,6 @@ cd ..
 
 # Create a symbolic link to the wit directory for Scala to reference when building it's components
 mkdir -p ../scala/wit/deps/
-ln -s ../rust/http-client/wit/http-client.wit ../scala/wit/deps/http-client.wit
-ln -s ../rust/http-client-stub/wit/_stub.wit ../scala/wit/deps/_stub.wit
+cp rust/http-client/wit/http-client.wit scala/wit/deps/request_http_client/http-client.wit
+cp rust/http-client-stub/wit/_stub.wit scala/wit/deps/request_http_client-stub/_stub.wit
 

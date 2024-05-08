@@ -4,10 +4,7 @@ package example
 object ComponentName extends Api { self =>
 
   def gist(id: String): WitResult[String, String] = {
-    println(s"Fetching gist id: $id")
-    if (true)
-      WitResult.ok(id)
-    else
-        WitResult.err("Error")
+    val url = s"https://gist.githubusercontent.com/hearnadam/$id/raw/$id/"
+    stub_http_client
   }
 }

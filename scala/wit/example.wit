@@ -6,4 +6,5 @@ interface api {
 
 world component-name {
   export api;
+  import request:http-client-stub/stub-http-client;
 }
