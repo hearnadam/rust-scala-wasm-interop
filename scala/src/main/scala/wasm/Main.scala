@@ -1,4 +1,5 @@
+package wasm
 
-object Main extends App {
+object Github extends App {
     println("Test")
 }
