@@ -1,0 +1,12 @@
+package request:http;
+
+interface api {
+  get: func(url: string) -> result<string, string>;
+  post: func(url: string) -> result<string, string>;
+}
+
+world http {
+  import golem:api/host@0.2.0;
+
+  export api;
+}
