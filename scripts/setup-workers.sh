@@ -28,3 +28,8 @@ cd ..
 
 # TODO: We build all the scala things here, then profit.
 
+# Create a symbolic link to the wit directory for Scala to reference when building it's components
+mkdir -p ../scala/wit/deps/
+ln -s ../rust/http-client/wit/http-client.wit ../scala/wit/deps/http-client.wit
+ln -s ../rust/http-client-stub/wit/_stub.wit ../scala/wit/deps/_stub.wit
+
