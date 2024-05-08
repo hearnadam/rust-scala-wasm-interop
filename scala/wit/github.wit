@@ -1,0 +1,5 @@
+package request:github;
+
+interface api {
+  gist: func(id: string) -> result<string, string>;
+}
