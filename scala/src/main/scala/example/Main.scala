@@ -5,6 +5,6 @@ object ComponentName extends Api { self =>
 
   def gist(id: String): WitResult[String, String] = {
     val url = s"https://gist.githubusercontent.com/hearnadam/$id/raw/$id/"
-    stub_http_client
+    WitResult.ok(id)
   }
 }

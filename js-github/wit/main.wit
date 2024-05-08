@@ -1,0 +1,11 @@
+package golem:component;
+
+// See https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md for more details about the WIT syntax
+
+interface api {
+    gist: func(id: string) -> result<string, string>;
+}
+world js-github  {
+  export api;
+  import request:http-client-stub/stub-http-client;
+}
