@@ -4,3 +4,6 @@
 */project/target/
 */target
 deps/
+*/project/project/
+*/target
+*/node_modules
