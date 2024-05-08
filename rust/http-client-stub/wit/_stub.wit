@@ -1,0 +1,15 @@
+package request:http-client-stub;
+
+interface stub-http {
+  use golem:rpc/types@0.1.0.{uri};
+
+  resource api {
+    constructor(location: uri);
+    get: func(url: string) -> result<string, string>;
+  }
+
+}
+
+world wasm-rpc-stub-http {
+  export stub-http;
+}
